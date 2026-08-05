@@ -2380,6 +2380,7 @@ section {
         text-align: center;
         padding: 40px 20px;
         gap: 30px;
+        width: 100%;
     }
 
     .text {
@@ -2424,11 +2425,54 @@ section {
     .sec2,
     .sec4 {
         padding: 50px 0;
+        width: 90%;
     }
 
     .section-header h1 {
         font-size: 1.8rem;
         letter-spacing: 2px;
+    }
+
+    /* Promo Banner (Gadgets at Affordable Prices) */
+    .banner4 {
+        padding: 20px;
+    }
+
+    .banner4-overlay {
+        width: 90%;
+        padding: 0 10px;
+    }
+
+    .banner4-overlay h1 {
+        font-size: 1.6rem;
+        margin-bottom: 8px;
+    }
+
+    .banner4-overlay p {
+        font-size: 0.95rem;
+        margin-bottom: 15px;
+    }
+
+    /* Mobile container widths */
+    .assurance-body,
+    .flash-sale-body,
+    .testimonials-body {
+        width: 90%;
+    }
+
+    .services-body,
+    .process-body,
+    .pricing-body,
+    .contact-info-body,
+    .contact-form-body,
+    .stores-body,
+    .values-body,
+    .team-body,
+    .stats-body,
+    .about-intro-body,
+    .faq-body,
+    .footer-bottom p {
+        width: 90%;
     }
 
     .card-container {
@@ -2474,10 +2518,6 @@ section {
 
     .countdown-box span {
         font-size: 1.5rem;
-    }
-
-    .banner4-overlay h1 {
-        font-size: 1.8rem;
     }
 
     .testimonial-grid {
@@ -2576,10 +2616,6 @@ section {
         gap: 15px;
     }
 
-    .page-hero-content h1 {
-        font-size: 2rem;
-    }
-
     .cart-drawer {
         width: 100%;
     }
@@ -2595,5 +2631,136 @@ section {
 
     .stats-body {
         grid-template-columns: 1fr;
+    }
+
+    /* Promo Banner (Gadgets at Affordable Prices) - small screens */
+    .banner4 {
+        padding: 10px;
+    }
+
+    .banner4-overlay {
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .banner4-overlay h1 {
+        font-size: 1.3rem;
+        margin-bottom: 6px;
+    }
+
+    .banner4-overlay p {
+        font-size: 0.85rem;
+        margin-bottom: 12px;
+    }
+
+    .btn-light {
+        padding: 10px 22px;
+        font-size: 0.85rem;
+    }
+
+    /* Wider containers on very small screens */
+    .sec2,
+    .sec4,
+    .assurance-body,
+    .flash-sale-body,
+    .testimonials-body,
+    .footer-bottom p {
+        width: 95%;
+    }
+
+    .services-body,
+    .process-body,
+    .pricing-body,
+    .contact-info-body,
+    .contact-form-body,
+    .stores-body,
+    .values-body,
+    .team-body,
+    .stats-body,
+    .about-intro-body,
+    .faq-body {
+        width: 95%;
+    }
+
+    /* Section header scaling */
+    .section-header h1 {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+    /* Flash sale heading */
+    .flash-text h2 {
+        font-size: 1.6rem;
+    }
+
+    .flash-text p {
+        font-size: 0.9rem;
+    }
+
+    /* Countdown boxes */
+    .countdown-box {
+        min-width: 60px;
+        padding: 12px 8px;
+    }
+
+    .countdown-box span {
+        font-size: 1.2rem;
+    }
+
+    .countdown-box small {
+        font-size: 0.7rem;
+    }
+
+    /* Newsletter */
+    .newsletter-body h2 {
+        font-size: 1.7rem;
+    }
+
+    .newsletter-body p {
+        font-size: 0.9rem;
+    }
+
+    /* Testimonial cards */
+    .testimonial-card {
+        padding: 25px 20px;
+    }
+
+    /* Buttons */
+    #btn,
+    .btn-outline {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+    }
+
+    .hero-buttons {
+        gap: 10px;
+    }
+
+    /* About / Service / Contact page hero */
+    .page-hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .page-hero-content p {
+        font-size: 0.95rem;
+    }
+
+    /* CTA */
+    .cta-body h2 {
+        font-size: 1.6rem;
+    }
+
+    .cta-body p {
+        font-size: 0.95rem;
+    }
+
+    /* Footer */
+    .footer-grid,
+    .footer-container {
+        gap: 25px;
+    }
+
+    .footer-logo {
+        width: 100px;
     }
 }
