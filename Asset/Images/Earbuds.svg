@@ -1,0 +1,33 @@
+<svg width="200" height="180" viewBox="0 0 200 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ebGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f093fb"/>
+      <stop offset="100%" stop-color="#f5576c"/>
+    </linearGradient>
+  </defs>
+  <!-- Charging case -->
+  <rect x="60" y="50" width="80" height="90" rx="30" fill="#1a1a2e"/>
+  <rect x="68" y="58" width="64" height="74" rx="22" fill="url(#ebGrad)"/>
+  <circle cx="100" cy="105" r="10" fill="#1a1a2e"/>
+  <!-- Left earbud -->
+  <ellipse cx="40" cy="40" rx="22" ry="28" fill="#1a1a2e"/>
+  <ellipse cx="40" cy="40" rx="16" ry="22" fill="url(#ebGrad)"/>
+  <circle cx="40" cy="30" r="6" fill="#1a1a2e"/>
+  <!-- Right earbud -->
+  <ellipse cx="160" cy="40" rx="22" ry="28" fill="#1a1a2e"/>
+  <ellipse cx="160" cy="40" rx="16" ry="22" fill="url(#ebGrad)"/>
+  <circle cx="160" cy="30" r="6" fill="#1a1a2e"/>
+  <!-- LED indicator -->
+  <circle cx="100" cy="65" r="3" fill="#43e97b" opacity="0.8"/>
+</svg>
+</write_to_file>
+<task_progress>
+- [x] Analyze existing files
+- [x] Create SVG assets
+- [ ] Read current state of modified files
+- [ ] Create remaining product SVGs
+- [ ] Update style.css
+- [ ] Complete About.html, Service.html, Contact.html
+- [ ] Test the result
+</task_progress>
+</write_to_file>

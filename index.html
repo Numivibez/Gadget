@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Numi Gadget - Curated gadgets for creators, gamers, and everyday innovators. Shop smart watches, laptops, pads, VR headsets and more.">
+    <title>Numi Gadget | Premium Tech Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./Asset/Favicon/numi.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div id="logo">
+            <a href="index.html"><img src="./Asset/Images/numi-9.png" alt="Numi Logo" /></a>
+        </div>
+
+        <!-- MENU -->
+        <div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Service.html">Service</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- SEARCH -->
+        <form class="search-form" role="search" action="" method="get">
+            <input type="search" placeholder="Search gadgets..." id="siteSearch" aria-label="Search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+
+        <!-- CART ICON -->
+        <a href="#" class="cart-icon" onclick="toggleCart(event)" aria-label="Open cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="cart-badge" id="cartCount">0</span>
+        </a>
+
+        <!-- HAMBURGER -->
+        <a href="#none" class="navBtn4" onclick="navClick('.navBtn4')" aria-label="Toggle menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <main>
+        <div class="banner">
+            <div class="text">
+                <span class="eyebrow">Take a TIME Out</span>
+                <h1>Gear Up. <br>Stand Out.</h1>
+                <p>Curated gadgets for creators, gamers, and everyday innovators. Premium tech, unbeatable prices, delivered to your door.</p>
+                <div class="hero-buttons">
+                    <button id="btn" onclick="scrollToSection('featured')">Shop Now</button>
+                    <button class="btn-outline" onclick="window.location.href='About.html'">Learn More</button>
+                </div>
+
+                <!-- Mini stats -->
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="stat-num" data-target="15000">0</span>
+                        <small>Happy Customers</small>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-num" data-target="500">0</span>
+                        <small>Products</small>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-num" data-target="48">0</span>
+                        <small>Hour Delivery</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="./Asset/Images/HeadPhone.png" alt="Premium Wireless Headphones" loading="lazy" />
+            </div>
+        </div>
+    </main>
+
+    <!-- ===================== FEATURED PRODUCTS ===================== -->
+    <section id="featured">
+        <div class="sec2">
+            <div class="section-header">
+                <h1>Popular Collection</h1>
+                <p>Discover our most-loved gadgets, handpicked for you</p>
+            </div>
+
+            <div class="card-container">
+                <!-- Product 1 -->
+                <div class="card product-card reveal">
+                    <div class="wishlist-btn" onclick="toggleWishlist(this)" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></div>
+                    <div class="card-img bg-purple">
+                        <img src="./Asset/Images/SmartWatch.png" alt="Smart Watch">
+                    </div>
+                    <div class="card-content">
+                        <h3>Smart Watch Pro</h3>
+                        <p class="product-desc">Track fitness, calls & notifications on a stunning AMOLED display.</p>
+                        <div class="product-footer">
+                            <span class="price">₦85,000</span>
+                            <button class="add-cart-btn" onclick="addToCart('Smart Watch Pro', 85000, 'Wearables')"><i class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="card product-card reveal">
+                    <div class="wishlist-btn" onclick="toggleWishlist(this)" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></div>
+                    <div class="card-img bg-pink">
+                        <img src="./Asset/Images/Laptop.png" alt="Laptop">
+                    </div>
+                    <div class="card-content">
+                        <h3>UltraBook Air</h3>
+                        <p class="product-desc">Lightweight 14" laptop with 16GB RAM and all-day battery life.</p>
+                        <div class="product-footer">
+                            <span class="price">₦650,000</span>
+                            <button class="add-cart-btn" onclick="addToCart('UltraBook Air', 650000, 'Laptops')"><i class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="card product-card reveal">
+                    <div class="wishlist-btn" onclick="toggleWishlist(this)" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></div>
+                    <div class="card-img bg-blue">
+                        <img src="./Asset/Images/Pad.png" alt="Tablet">
+                    </div>
+                    <div class="card-content">
+                        <h3>Numi Pad Air</h3>
+                        <p class="product-desc">11-inch tablet perfect for work, streaming, and creativity.</p>
+                        <div class="product-footer">
+                            <span class="price">₦320,000</span>
+                            <button class="add-cart-btn" onclick="addToCart('Numi Pad Air', 320000, 'Tablets')"><i class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="card product-card reveal">
+                    <div class="wishlist-btn" onclick="toggleWishlist(this)" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></div>
+                    <div class="card-img bg-green">
+                        <img src="./Asset/Images/VR.png" alt="VR Headset">
+                    </div>
+                    <div class="card-content">
+                        <h3>VR Vision Pro</h3>
+                        <p class="product-desc">Immersive virtual reality headset with 4K per-eye resolution.</p>
+                        <div class="product-footer">
+                            <span class="price">₦480,000</span>
+                            <button class="add-cart-btn" onclick="addToCart('VR Vision Pro', 480000, 'VR')"><i class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="card product-card reveal">
+                    <div class="wishlist-btn" onclick="toggleWishlist(this)" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></div>
+                    <div class="card-img bg-orange">
+                        <img src="./Asset/Images/Earbuds.png" alt="Wireless Earbuds">
+                    </div>
+                    <div class="card-content">
+                        <h3>AirSound Pro</h3>
+                        <p class="product-desc">Active noise-cancelling wireless earbuds with 30hr battery.</p>
+                        <div class="product-footer">
+                            <span class="price">₦45,000</span>
+                            <button class="add-cart-btn" onclick="addToCart('AirSound Pro', 45000, 'Audio')"><i class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="card product-card reveal">
+                    <div class="wishlist-btn" onclick="toggleWishlist(this)" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></div>
+                    <div class="card-img bg-teal">
+                        <img src="./Asset/Images/Headset.png" alt="Gaming Headset">
+                    </div>
+                    <div class="card-content">
+                        <h3>GameZone Headset</h3>
+                        <p class="product-desc">7.1 surround sound gaming headset with RGB lighting.</p>
+                        <div class="product-footer">
+                            <span class="price">₦72,000</span>
+                            <button class="add-cart-btn" onclick="addToCart('GameZone Headset', 72000, 'Audio')"><i class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="card product-card reveal">
+                    <div class="wishlist-btn" onclick="toggleWishlist(this)" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></div>
+                    <div class="card-img bg-purple">
+                        <img src="./Asset/Images/Headset1.png" alt="Studio Headset">
+                    </div>
+                    <div class="card-content">
+                        <h3>StudioMax Pro</h3>
+                        <p class="product-desc">Studio-grade headphones for creators and audiophiles.</p>
+                        <div class="product-footer">
+                            <span class="price">₦95,000</span>
+                            <button class="add-cart-btn" onclick="addToCart('StudioMax Pro', 95000, 'Audio')"><i class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="card product-card reveal">
+                    <div class="wishlist-btn" onclick="toggleWishlist(this)" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></div>
+                    <div class="card-img bg-pink">
+                        <img src="./Asset/Images/SmartWatch.png" alt="Fitness Watch">
+                    </div>
+                    <div class="card-content">
+                        <h3>FitTrack Lite</h3>
+                        <p class="product-desc">Affordable fitness tracker with heart-rate & sleep monitoring.</p>
+                        <div class="product-footer">
+                            <span class="price">₦38,000</span>
+                            <button class="add-cart-btn" onclick="addToCart('FitTrack Lite', 38000, 'Wearables')"><i class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ASSURANCE / FEATURES ===================== -->
+    <section id="sec3">
+        <div class="assurance-body">
+            <div class="section-header">
+                <h1>Why Shop With Us?</h1>
+                <p>We make buying gadgets simple, safe, and rewarding</p>
+            </div>
+            <div class="assurance">
+                <div class="assure-content reveal">
+                    <div class="assure-svg"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div class="assure-text">
+                        <h4>Extended Warranty</h4>
+                        <p>Ensure long-term peace of mind with our extended warranty plans.</p>
+                    </div>
+                </div>
+
+                <div class="assure-content reveal">
+                    <div class="assure-svg"><i class="fa-solid fa-truck-fast"></i></div>
+                    <div class="assure-text">
+                        <h4>Free Delivery & Return</h4>
+                        <p>Shop with confidence — free delivery & hassle-free returns.</p>
+                    </div>
+                </div>
+
+                <div class="assure-content reveal">
+                    <div class="assure-svg"><i class="fa-solid fa-credit-card"></i></div>
+                    <div class="assure-text">
+                        <h4>Easy Installment</h4>
+                        <p>Shop now and pay easily with simplified installments.</p>
+                    </div>
+                </div>
+
+                <div class="assure-content reveal">
+                    <div class="assure-svg"><i class="fa-solid fa-sack-dollar"></i></div>
+                    <div class="assure-text">
+                        <h4>Cashback Rewards</h4>
+                        <p>Earn cashback on every purchase — shop smarter!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FLASH SALE / COUNTDOWN ===================== -->
+    <section class="flash-sale">
+        <div class="flash-sale-body">
+            <div class="flash-text">
+                <span class="eyebrow">Limited Time Offer</span>
+                <h2>Flash Sale — Up to 40% Off</h2>
+                <p>Hurry! Deals end soon. Grab your favorite gadgets at unbeatable prices.</p>
+            </div>
+            <div class="countdown">
+                <div class="countdown-box"><span id="cdDays">00</span><small>Days</small></div>
+                <div class="countdown-box"><span id="cdHours">00</span><small>Hours</small></div>
+                <div class="countdown-box"><span id="cdMins">00</span><small>Mins</small></div>
+                <div class="countdown-box"><span id="cdSecs">00</span><small>Secs</small></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PROMO BANNER ===================== -->
+    <section class="promo-section">
+        <div class="sec4">
+            <div class="banner4">
+                <img src="./Asset/Images/gadget-bg.jpg" alt="Gadgets at affordable prices"/>
+                <div class="banner4-overlay">
+                    <h1>Gadgets at Affordable Prices</h1>
+                    <p>Quality tech doesn't have to break the bank</p>
+                    <button class="btn-light" onclick="scrollToSection('featured')">Browse Collection</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section class="testimonials">
+        <div class="testimonials-body">
+            <div class="section-header">
+                <h1>What Our Customers Say</h1>
+                <p>Real reviews from real Numi shoppers</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card reveal">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p>"The Smart Watch Pro exceeded my expectations. Delivery was lightning fast!"</p>
+                    <div class="testimonial-author">
+                        <div class="avatar">A</div>
+                        <div><strong>Ada Okafor</strong><small>Lagos, Nigeria</small></div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p>"UltraBook Air is the best laptop I've owned. The installment plan made it affordable."</p>
+                    <div class="testimonial-author">
+                        <div class="avatar">C</div>
+                        <div><strong>Chidi Eze</strong><small>Abuja, Nigeria</small></div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+                    <p>"VR Vision Pro is mind-blowing! Numi's customer service is top-notch too."</p>
+                    <div class="testimonial-author">
+                        <div class="avatar">F</div>
+                        <div><strong>Fatima Bello</strong><small>Kano, Nigeria</small></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== NEWSLETTER ===================== -->
+    <section class="newsletter">
+        <div class="newsletter-body">
+            <h2>Stay in the Loop</h2>
+            <p>Subscribe for exclusive deals, new arrivals, and tech tips</p>
+            <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe <i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <img src="./Asset/Images/numi-9.png" alt="Numi Logo" class="footer-logo" />
+                <p>Curated gadgets for creators, gamers, and everyday innovators. Premium tech, unbeatable prices.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="index.html#featured">Smart Watches</a></li>
+                    <li><a href="index.html#featured">Laptops</a></li>
+                    <li><a href="index.html#featured">Tablets</a></li>
+                    <li><a href="index.html#featured">VR Headsets</a></li>
+                    <li><a href="index.html#featured">Audio</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Service.html">Services</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Warranty</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year">2025</span> Numi Gadget. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ===================== CART DRAWER ===================== -->
+    <div class="cart-overlay" onclick="toggleCart(event)"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+        <div class="cart-header">
+            <h3><i class="fa-solid fa-bag-shopping"></i> Your Cart (<span id="cartTotalItems">0</span>)</h3>
+            <button class="cart-close" onclick="toggleCart(event)" aria-label="Close cart"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <strong id="cartTotalPrice">₦0</strong>
+            </div>
+            <button class="checkout-btn" onclick="checkout()">Checkout <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </aside>
+
+    <!-- ===================== TOAST ===================== -->
+    <div class="toast" id="toast">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toastMsg">Item added!</span>
+    </div>
+
+    <!-- ===================== BACK TO TOP ===================== -->
+    <button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<svg width="200" height="180" viewBox="0 0 200 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#43e97b"/>
+      <stop offset="100%" stop-color="#38f9d7"/>
+    </linearGradient>
+  </defs>
+  <!-- Headband -->
+  <path d="M50 110 C50 55 90 30 100 30 C110 30 150 55 150 110" stroke="#1a1a2e" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <path d="M55 105 C55 60 90 40 100 40 C110 40 145 60 145 105" stroke="url(#hsGrad)" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <!-- Left ear cup -->
+  <rect x="25" y="95" width="55" height="65" rx="20" fill="#1a1a2e"/>
+  <rect x="32" y="102" width="41" height="51" rx="14" fill="#0f0f23"/>
+  <!-- Right ear cup -->
+  <rect x="120" y="95" width="55" height="65" rx="20" fill="#1a1a2e"/>
+  <rect x="127" y="102" width="41" height="51" rx="14" fill="#0f0f23"/>
+  <!-- RGB lights -->
+  <circle cx="52" cy="115" r="5" fill="#43e97b" opacity="0.9"/>
+  <circle cx="52" cy="135" r="5" fill="#43e97b" opacity="0.9"/>
+  <circle cx="148" cy="115" r="5" fill="#43e97b" opacity="0.9"/>
+  <circle cx="148" cy="135" r="5" fill="#43e97b" opacity="0.9"/>
+  <!-- Mic boom -->
+  <path d="M148 130 L165 140 C172 144 170 152 165 150 L160 149" stroke="#1a1a2e" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <circle cx="165" cy="148" r="4" fill="#43e97b"/>
+  <!-- Logo on left cup -->
+  <text x="52" y="130" font-family="Arial" font-size="10" font-weight="700" fill="#43e97b" text-anchor="middle">N</text>
+</svg>
+</write_to_file>
+<task_progress>
+- [x] Analyze existing files
+- [x] Create SVG assets
+- [ ] Create remaining product SVGs
+- [ ] Update style.css
+- [ ] Complete About.html, Service.html, Contact.html
+- [ ] Test the result
+</task_progress>
+</write_to_file>

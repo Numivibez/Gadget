@@ -1,0 +1,28 @@
+<svg width="550" height="420" viewBox="0 0 550 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hpGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bd35bd"/>
+      <stop offset="100%" stop-color="#6a246a"/>
+    </linearGradient>
+    <linearGradient id="hpGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8e2f8e"/>
+      <stop offset="100%" stop-color="#4d164d"/>
+    </linearGradient>
+  </defs>
+  <!-- Headband -->
+  <path d="M120 220 C120 110 210 60 275 60 C340 60 430 110 430 220" stroke="url(#hpGrad1)" stroke-width="24" stroke-linecap="round" fill="none"/>
+  <path d="M140 210 C140 120 220 75 275 75 C330 75 410 120 410 210" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Left Ear Cup -->
+  <rect x="80" y="190" width="100" height="150" rx="40" fill="url(#hpGrad2)"/>
+  <rect x="95" y="205" width="70" height="120" rx="30" fill="#2d0c2d"/>
+  <!-- Right Ear Cup -->
+  <rect x="370" y="190" width="100" height="150" rx="40" fill="url(#hpGrad2)"/>
+  <rect x="385" y="205" width="70" height="120" rx="30" fill="#2d0c2d"/>
+  <!-- Left Arm -->
+  <path d="M130 200 L160 120 L200 130" stroke="#8e2f8e" stroke-width="18" stroke-linecap="round" fill="none"/>
+  <!-- Right Arm -->
+  <path d="M420 200 L390 120 L350 130" stroke="#8e2f8e" stroke-width="18" stroke-linecap="round" fill="none"/>
+  <!-- Glow circles -->
+  <circle cx="275" cy="280" r="140" fill="#bd35bd" opacity="0.2"/>
+  <circle cx="275" cy="280" r="100" fill="#bd35bd" opacity="0.15"/>
+</svg>

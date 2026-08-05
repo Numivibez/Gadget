@@ -1,0 +1,42 @@
+<svg width="200" height="180" viewBox="0 0 200 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="spkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bd35bd"/>
+      <stop offset="100%" stop-color="#6a246a"/>
+    </linearGradient>
+  </defs>
+  <!-- Speaker body -->
+  <rect x="50" y="20" width="100" height="140" rx="20" fill="url(#spkGrad)"/>
+  <!-- Driver circle -->
+  <circle cx="100" cy="75" r="35" fill="#1a1a2e"/>
+  <circle cx="100" cy="75" r="28" fill="#2d2d4e"/>
+  <circle cx="100" cy="75" r="20" fill="#1a1a2e"/>
+  <circle cx="100" cy="75" r="5" fill="#bd35bd"/>
+  <!-- Passive radiator bottom -->
+  <circle cx="100" cy="135" r="18" fill="#1a1a2e" opacity="0.6"/>
+  <circle cx="100" cy="135" r="12" fill="#2d2d4e" opacity="0.6"/>
+  <!-- Light ring -->
+  <circle cx="100" cy="75" r="38" fill="none" stroke="#bd35bd" stroke-width="2" opacity="0.5"/>
+  <!-- Sound waves -->
+  <path d="M30 75 C20 60 20 90 30 75" stroke="#bd35bd" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M15 75 C5 50 5 100 15 75" stroke="#bd35bd" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.4"/>
+  <path d="M170 75 C180 60 180 90 170 75" stroke="#bd35bd" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M185 75 C195 50 195 100 185 75" stroke="#bd35bd" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.4"/>
+</svg>
+</write_to_file>
+<task_progress>
+- [x] Analyze existing files
+- [x] Check available assets (Asset folder was empty)
+- [x] Create SVG assets
+- [x] Create favicon and bg assets
+- [x] Read script.js requirements
+- [ ] Create additional product SVGs
+- [ ] Rebuild index.html
+- [ ] Complete About.html
+- [ ] Complete Service.html
+- [ ] Add Contact.html
+- [ ] Add Notification.html
+- [ ] Rewrite style.css
+- [ ] Test the result
+</task_progress>
+</write_to_file>

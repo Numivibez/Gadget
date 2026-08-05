@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Numi Gadget services - repair, installation, tech support, trade-in, corporate bulk orders, and extended warranty plans.">
+    <title>Services | Numi Gadget</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="./Asset/Favicon/numi.svg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar">
+        <div id="logo">
+            <a href="index.html"><img src="./Asset/Images/numi-9.png" alt="Numi Logo" /></a>
+        </div>
+        <div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Service.html">Service</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <form class="search-form" role="search" action="" method="get">
+            <input type="search" placeholder="Search gadgets..." id="siteSearch" aria-label="Search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <a href="#" class="cart-icon" onclick="toggleCart(event)" aria-label="Open cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="cart-badge" id="cartCount">0</span>
+        </a>
+        <a href="#none" class="navBtn4" onclick="navClick('.navBtn4')" aria-label="Toggle menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+    </nav>
+
+    <!-- ===================== PAGE HERO ===================== -->
+    <header class="page-hero">
+        <div class="page-hero-content">
+            <span class="eyebrow">What We Offer</span>
+            <h1>Our Services</h1>
+            <p>More than just a store — we're your complete tech partner.</p>
+        </div>
+    </header>
+
+    <!-- ===================== SERVICES GRID ===================== -->
+    <section class="services-section">
+        <div class="services-body">
+            <div class="section-header">
+                <h1>How We Can Help You</h1>
+                <p>From repairs to corporate supply, we've got you covered</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                    <h3>Device Repair</h3>
+                    <p>Expert repair for phones, laptops, tablets, and wearables. Fast turnaround with genuine parts.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> Screen replacement</li>
+                        <li><i class="fa-solid fa-check"></i> Battery service</li>
+                        <li><i class="fa-solid fa-check"></i> Water damage repair</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3>Setup & Installation</h3>
+                    <p>Get your new devices up and running with our professional setup and data transfer service.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> Software installation</li>
+                        <li><i class="fa-solid fa-check"></i> Data migration</li>
+                        <li><i class="fa-solid fa-check"></i> System optimization</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fa-solid fa-headset"></i></div>
+                    <h3>Tech Support</h3>
+                    <p>24/7 technical support from our certified specialists. Reach us by phone, chat, or in-store.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> Remote assistance</li>
+                        <li><i class="fa-solid fa-check"></i> Troubleshooting</li>
+                        <li><i class="fa-solid fa-check"></i> Software updates</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
+                    <h3>Trade-In Program</h3>
+                    <p>Upgrade and save! Trade in your old devices for credit toward your next purchase.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> Instant valuation</li>
+                        <li><i class="fa-solid fa-check"></i> Free device pickup</li>
+                        <li><i class="fa-solid fa-check"></i> Eco-friendly recycling</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fa-solid fa-building"></i></div>
+                    <h3>Corporate Orders</h3>
+                    <p>Bulk supply for businesses, schools, and organizations with special pricing and support.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> Volume discounts</li>
+                        <li><i class="fa-solid fa-check"></i> Dedicated account manager</li>
+                        <li><i class="fa-solid fa-check"></i> Invoice billing</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Extended Warranty</h3>
+                    <p>Protect your investment with up to 3 years of extended coverage on eligible products.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> Accidental damage cover</li>
+                        <li><i class="fa-solid fa-check"></i> Free replacements</li>
+                        <li><i class="fa-solid fa-check"></i> No deductibles</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PROCESS / HOW IT WORKS ===================== -->
+    <section class="process-section">
+        <div class="process-body">
+            <div class="section-header">
+                <h1>How It Works</h1>
+                <p>Getting service from Numi is simple</p>
+            </div>
+            <div class="process-grid">
+                <div class="process-step reveal">
+                    <div class="process-num">1</div>
+                    <h3>Book a Service</h3>
+                    <p>Contact us online or visit any of our stores to schedule your service.</p>
+                </div>
+                <div class="process-step reveal">
+                    <div class="process-num">2</div>
+                    <h3>Diagnosis & Quote</h3>
+                    <p>Our experts assess your device and provide a transparent, no-obligation quote.</p>
+                </div>
+                <div class="process-step reveal">
+                    <div class="process-num">3</div>
+                    <h3>We Fix It</h3>
+                    <p>Once approved, we get to work using genuine parts and certified techniques.</p>
+                </div>
+                <div class="process-step reveal">
+                    <div class="process-num">4</div>
+                    <h3>Collect & Enjoy</h3>
+                    <p>Pick up your device or have it delivered — fully tested and ready to go.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PRICING ===================== -->
+    <section class="pricing-section">
+        <div class="pricing-body">
+            <div class="section-header">
+                <h1>Service Plans</h1>
+                <p>Choose the plan that fits your needs</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card reveal">
+                    <h3>Basic</h3>
+                    <div class="price-tag">Free</div>
+                    <p>With any product purchase</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> 6-month warranty</li>
+                        <li><i class="fa-solid fa-check"></i> Email support</li>
+                        <li><i class="fa-solid fa-check"></i> Free setup guide</li>
+                        <li class="muted"><i class="fa-solid fa-xmark"></i> Priority service</li>
+                        <li class="muted"><i class="fa-solid fa-xmark"></i> Extended warranty</li>
+                    </ul>
+                    <button class="btn-outline" onclick="window.location.href='index.html'">Shop Now</button>
+                </div>
+                <div class="pricing-card featured reveal">
+                    <span class="badge">Most Popular</span>
+                    <h3>Plus</h3>
+                    <div class="price-tag">₦5,000<span>/mo</span></div>
+                    <p>For active tech users</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> 1-year warranty</li>
+                        <li><i class="fa-solid fa-check"></i> 24/7 phone support</li>
+                        <li><i class="fa-solid fa-check"></i> Free setup & installation</li>
+                        <li><i class="fa-solid fa-check"></i> Priority service queue</li>
+                        <li class="muted"><i class="fa-solid fa-xmark"></i> Extended warranty</li>
+                    </ul>
+                    <button class="btn-primary" onclick="showToast('Plus plan selected! 🎉')">Choose Plus</button>
+                </div>
+                <div class="pricing-card reveal">
+                    <h3>Premium</h3>
+                    <div class="price-tag">₦12,000<span>/mo</span></div>
+                    <p>Complete peace of mind</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> 3-year warranty</li>
+                        <li><i class="fa-solid fa-check"></i> 24/7 priority support</li>
+                        <li><i class="fa-solid fa-check"></i> Free setup & installation</li>
+                        <li><i class="fa-solid fa-check"></i> Priority service queue</li>
+                        <li><i class="fa-solid fa-check"></i> Accidental damage cover</li>
+                    </ul>
+                    <button class="btn-outline" onclick="showToast('Premium plan selected! 🎉')">Choose Premium</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="faq-section">
+        <div class="faq-body">
+            <div class="section-header">
+                <h1>Service FAQ</h1>
+                <p>Common questions about our services</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question"><span>How long do repairs take?</span><i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Most repairs are completed within 24–72 hours. Complex repairs may take 3–5 business days. We'll give you an accurate estimate after diagnosis.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><span>Do you use genuine parts?</span><i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Yes, we only use genuine, manufacturer-approved parts for all repairs to ensure quality and preserve your warranty.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><span>Is there a diagnosis fee?</span><i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Diagnosis is free for products purchased from Numi. For devices bought elsewhere, a small fee applies — which is waived if you proceed with the repair.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><span>Can I cancel a service plan?</span><i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Yes, you can cancel any service plan within 14 days for a full refund. After that, cancellations are pro-rated.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CTA ===================== -->
+    <section class="cta-section">
+        <div class="cta-body">
+            <h2>Need a Service?</h2>
+            <p>Our team is ready to help. Get in touch today for a free consultation.</p>
+            <button class="btn-light" onclick="window.location.href='Contact.html'">Contact Us <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <img src="./Asset/Images/numi-9.png" alt="Numi Logo" class="footer-logo" />
+                <p>Curated gadgets for creators, gamers, and everyday innovators. Premium tech, unbeatable prices.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="index.html#featured">Smart Watches</a></li>
+                    <li><a href="index.html#featured">Laptops</a></li>
+                    <li><a href="index.html#featured">Tablets</a></li>
+                    <li><a href="index.html#featured">VR Headsets</a></li>
+                    <li><a href="index.html#featured">Audio</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Service.html">Services</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Warranty</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year">2025</span> Numi Gadget. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ===================== CART DRAWER ===================== -->
+    <div class="cart-overlay" onclick="toggleCart(event)"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+        <div class="cart-header">
+            <h3><i class="fa-solid fa-bag-shopping"></i> Your Cart (<span id="cartTotalItems">0</span>)</h3>
+            <button class="cart-close" onclick="toggleCart(event)" aria-label="Close cart"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <strong id="cartTotalPrice">₦0</strong>
+            </div>
+            <button class="checkout-btn" onclick="checkout()">Checkout <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </aside>
+
+    <!-- ===================== TOAST ===================== -->
+    <div class="toast" id="toast">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toastMsg">Item added!</span>
+    </div>
+
+    <!-- ===================== BACK TO TOP ===================== -->
+    <button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>

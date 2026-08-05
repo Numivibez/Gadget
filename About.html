@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Numi Gadget - our mission, values, team, and journey to becoming Nigeria's trusted premium tech retailer.">
+    <title>About Us | Numi Gadget</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="./Asset/Favicon/numi.svg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar">
+        <div id="logo">
+            <a href="index.html"><img src="./Asset/Images/numi-9.png" alt="Numi Logo" /></a>
+        </div>
+        <div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Service.html">Service</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <form class="search-form" role="search" action="" method="get">
+            <input type="search" placeholder="Search gadgets..." id="siteSearch" aria-label="Search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <a href="#" class="cart-icon" onclick="toggleCart(event)" aria-label="Open cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="cart-badge" id="cartCount">0</span>
+        </a>
+        <a href="#none" class="navBtn4" onclick="navClick('.navBtn4')" aria-label="Toggle menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+    </nav>
+
+    <!-- ===================== PAGE HERO ===================== -->
+    <header class="page-hero">
+        <div class="page-hero-content">
+            <span class="eyebrow">Our Story</span>
+            <h1>About Numi Gadget</h1>
+            <p>Bringing premium technology within everyone's reach since 2018.</p>
+        </div>
+    </header>
+
+    <!-- ===================== MISSION / INTRO ===================== -->
+    <section class="about-intro">
+        <div class="about-intro-body">
+            <div class="about-intro-text reveal">
+                <span class="eyebrow">Who We Are</span>
+                <h2>Tech That Empowers You</h2>
+                <p>Numi Gadget is Nigeria's trusted destination for premium gadgets and electronics. We believe that great technology should be accessible, affordable, and backed by service you can count on.</p>
+                <p>From the latest smart watches to powerhouse laptops and immersive VR gear, every product in our catalog is hand-picked by our team of tech enthusiasts who live and breathe innovation.</p>
+                <button class="btn-primary" onclick="window.location.href='index.html'">Explore Products <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="about-intro-image reveal">
+                <img src="./Asset/Images/gadget-bg.svg" alt="Numi Gadget showroom" loading="lazy" />
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== STATS ===================== -->
+    <section class="stats-section">
+        <div class="stats-body">
+            <div class="stat-card reveal">
+                <i class="fa-solid fa-users"></i>
+                <span class="stat-num" data-target="15000">0</span>
+                <small>Happy Customers</small>
+            </div>
+            <div class="stat-card reveal">
+                <i class="fa-solid fa-box-open"></i>
+                <span class="stat-num" data-target="500">0</span>
+                <small>Products Sold</small>
+            </div>
+            <div class="stat-card reveal">
+                <i class="fa-solid fa-store"></i>
+                <span class="stat-num" data-target="12">0</span>
+                <small>Stores Nationwide</small>
+            </div>
+            <div class="stat-card reveal">
+                <i class="fa-solid fa-award"></i>
+                <span class="stat-num" data-target="7">0</span>
+                <small>Years of Excellence</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== VALUES ===================== -->
+    <section class="values-section">
+        <div class="values-body">
+            <div class="section-header">
+                <h1>Our Core Values</h1>
+                <p>The principles that guide everything we do</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card reveal">
+                    <div class="value-icon"><i class="fa-solid fa-handshake"></i></div>
+                    <h3>Integrity</h3>
+                    <p>We're honest about our products and transparent about our prices. No hidden fees, no gimmicks.</p>
+                </div>
+                <div class="value-card reveal">
+                    <div class="value-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <h3>Innovation</h3>
+                    <p>We constantly seek out the latest tech so you're always ahead of the curve.</p>
+                </div>
+                <div class="value-card reveal">
+                    <div class="value-icon"><i class="fa-solid fa-heart"></i></div>
+                    <h3>Customer First</h3>
+                    <p>Every decision starts with one question: "Does this serve our customers better?"</p>
+                </div>
+                <div class="value-card reveal">
+                    <div class="value-icon"><i class="fa-solid fa-globe"></i></div>
+                    <h3>Accessibility</h3>
+                    <p>Premium tech shouldn't be a luxury. We make it affordable with installments and cashback.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== TEAM ===================== -->
+    <section class="team-section">
+        <div class="team-body">
+            <div class="section-header">
+                <h1>Meet The Team</h1>
+                <p>The passionate people behind Numi Gadget</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card reveal">
+                    <div class="team-avatar" style="background: linear-gradient(135deg, #667eea, #764ba2);">JA</div>
+                    <h3>James Adeyemi</h3>
+                    <span>Founder & CEO</span>
+                    <p>Tech visionary with a passion for making gadgets accessible to all Nigerians.</p>
+                    <div class="team-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-card reveal">
+                    <div class="team-avatar" style="background: linear-gradient(135deg, #f093fb, #f5576c);">SO</div>
+                    <h3>Sade Okafor</h3>
+                    <span>Head of Operations</span>
+                    <p>Ensures every order is delivered fast and every customer is satisfied.</p>
+                    <div class="team-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-card reveal">
+                    <div class="team-avatar" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">TE</div>
+                    <h3>Tunde Eze</h3>
+                    <span>Lead Tech Specialist</span>
+                    <p>Curates our catalog and tests every product before it reaches you.</p>
+                    <div class="team-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-card reveal">
+                    <div class="team-avatar" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">FB</div>
+                    <h3>Fatima Bello</h3>
+                    <span>Customer Success</span>
+                    <p>Your go-to person for support, warranty claims, and tech advice.</p>
+                    <div class="team-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="faq-section">
+        <div class="faq-body">
+            <div class="section-header">
+                <h1>Frequently Asked Questions</h1>
+                <p>Got questions? We've got answers</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question"><span>How long does delivery take?</span><i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Within Lagos, delivery takes 24–48 hours. Nationwide delivery takes 2–5 business days depending on your location.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><span>Do you offer warranty on products?</span><i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Yes! All products come with a minimum 6-month manufacturer warranty. We also offer extended warranty plans for added peace of mind.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><span>Can I pay in installments?</span><i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Absolutely. We offer flexible installment plans on most products. Add an item to your cart and select "Pay in Installments" at checkout.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><span>What is your return policy?</span><i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>We offer a 7-day return policy on all products. Items must be in original condition with all accessories included.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><span>Do you ship outside Nigeria?</span><i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Currently, we ship nationwide within Nigeria. International shipping is coming soon — subscribe to our newsletter for updates!</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CTA ===================== -->
+    <section class="cta-section">
+        <div class="cta-body">
+            <h2>Ready to Gear Up?</h2>
+            <p>Explore our latest gadgets and find your perfect tech companion.</p>
+            <button class="btn-primary" onclick="window.location.href='index.html'">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <img src="./Asset/Images/numi-9.png" alt="Numi Logo" class="footer-logo" />
+                <p>Curated gadgets for creators, gamers, and everyday innovators. Premium tech, unbeatable prices.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="index.html#featured">Smart Watches</a></li>
+                    <li><a href="index.html#featured">Laptops</a></li>
+                    <li><a href="index.html#featured">Tablets</a></li>
+                    <li><a href="index.html#featured">VR Headsets</a></li>
+                    <li><a href="index.html#featured">Audio</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Service.html">Services</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Warranty</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year">2025</span> Numi Gadget. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ===================== CART DRAWER ===================== -->
+    <div class="cart-overlay" onclick="toggleCart(event)"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+        <div class="cart-header">
+            <h3><i class="fa-solid fa-bag-shopping"></i> Your Cart (<span id="cartTotalItems">0</span>)</h3>
+            <button class="cart-close" onclick="toggleCart(event)" aria-label="Close cart"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <strong id="cartTotalPrice">₦0</strong>
+            </div>
+            <button class="checkout-btn" onclick="checkout()">Checkout <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </aside>
+
+    <!-- ===================== TOAST ===================== -->
+    <div class="toast" id="toast">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toastMsg">Item added!</span>
+    </div>
+
+    <!-- ===================== BACK TO TOP ===================== -->
+    <button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>

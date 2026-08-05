@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Numi Gadget - reach our support team, visit our stores, or send us a message. We're here to help.">
+    <title>Contact Us | Numi Gadget</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="./Asset/Favicon/numi.svg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar">
+        <div id="logo">
+            <a href="index.html"><img src="./Asset/Images/numi-9.png" alt="Numi Logo" /></a>
+        </div>
+        <div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Service.html">Service</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <form class="search-form" role="search" action="" method="get">
+            <input type="search" placeholder="Search gadgets..." id="siteSearch" aria-label="Search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <a href="#" class="cart-icon" onclick="toggleCart(event)" aria-label="Open cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="cart-badge" id="cartCount">0</span>
+        </a>
+        <a href="#none" class="navBtn4" onclick="navClick('.navBtn4')" aria-label="Toggle menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+    </nav>
+
+    <!-- ===================== PAGE HERO ===================== -->
+    <header class="page-hero">
+        <div class="page-hero-content">
+            <span class="eyebrow">Get In Touch</span>
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you. Reach out and we'll respond within 24 hours.</p>
+        </div>
+    </header>
+
+    <!-- ===================== CONTACT INFO CARDS ===================== -->
+    <section class="contact-info-section">
+        <div class="contact-info-body">
+            <div class="contact-info-grid">
+                <div class="contact-info-card reveal">
+                    <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <h3>Visit Us</h3>
+                    <p>123 Tech Plaza, Victoria Island<br>Lagos, Nigeria</p>
+                </div>
+                <div class="contact-info-card reveal">
+                    <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
+                    <h3>Call Us</h3>
+                    <p>+234 800 123 4567<br>+234 800 765 4321</p>
+                </div>
+                <div class="contact-info-card reveal">
+                    <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <h3>Email Us</h3>
+                    <p>support@numigadget.com<br>sales@numigadget.com</p>
+                </div>
+                <div class="contact-info-card reveal">
+                    <div class="contact-info-icon"><i class="fa-solid fa-clock"></i></div>
+                    <h3>Open Hours</h3>
+                    <p>Mon–Fri: 8AM – 8PM<br>Sat–Sun: 10AM – 6PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT FORM + MAP ===================== -->
+    <section class="contact-form-section">
+        <div class="contact-form-body">
+            <div class="contact-form-wrapper reveal">
+                <span class="eyebrow">Send a Message</span>
+                <h2>Let's Talk</h2>
+                <p>Fill out the form below and our team will get back to you shortly.</p>
+                <form class="contact-form" onsubmit="handleContactForm(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="+234 800 123 4567">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" required>
+                                <option value="">Select a topic</option>
+                                <option>Product Inquiry</option>
+                                <option>Order Support</option>
+                                <option>Repair Service</option>
+                                <option>Warranty Claim</option>
+                                <option>Corporate Orders</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Tell us how we can help..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+            <div class="contact-map reveal">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31701.9576!2d3.4196!3d6.4281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMjUnNDEuMiJOIDPCsDI1JzEwLjYiRQ!5e0!3m2!1sen!2sng!4v1600000000000"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" title="Numi Gadget Location"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== STORE LOCATIONS ===================== -->
+    <section class="stores-section">
+        <div class="stores-body">
+            <div class="section-header">
+                <h1>Our Stores</h1>
+                <p>Find a Numi Gadget store near you</p>
+            </div>
+            <div class="stores-grid">
+                <div class="store-card reveal">
+                    <div class="store-img"><i class="fa-solid fa-store"></i></div>
+                    <h3>Lagos — Victoria Island</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> 123 Tech Plaza, Victoria Island</p>
+                    <p><i class="fa-solid fa-phone"></i> +234 800 123 4567</p>
+                    <span class="store-status open"><i class="fa-solid fa-circle"></i> Open Now</span>
+                </div>
+                <div class="store-card reveal">
+                    <div class="store-img"><i class="fa-solid fa-store"></i></div>
+                    <h3>Abuja — Wuse 2</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> 45 Aminu Kano Crescent, Wuse 2</p>
+                    <p><i class="fa-solid fa-phone"></i> +234 800 765 4321</p>
+                    <span class="store-status open"><i class="fa-solid fa-circle"></i> Open Now</span>
+                </div>
+                <div class="store-card reveal">
+                    <div class="store-img"><i class="fa-solid fa-store"></i></div>
+                    <h3>Kano — Bayero Road</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> 78 Bayero Road, Nasarawa GRA</p>
+                    <p><i class="fa-solid fa-phone"></i> +234 800 999 8888</p>
+                    <span class="store-status closed"><i class="fa-solid fa-circle"></i> Closed</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <img src="./Asset/Images/numi-9.png" alt="Numi Logo" class="footer-logo" />
+                <p>Curated gadgets for creators, gamers, and everyday innovators. Premium tech, unbeatable prices.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="index.html#featured">Smart Watches</a></li>
+                    <li><a href="index.html#featured">Laptops</a></li>
+                    <li><a href="index.html#featured">Tablets</a></li>
+                    <li><a href="index.html#featured">VR Headsets</a></li>
+                    <li><a href="index.html#featured">Audio</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Service.html">Services</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Warranty</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year">2025</span> Numi Gadget. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ===================== CART DRAWER ===================== -->
+    <div class="cart-overlay" onclick="toggleCart(event)"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+        <div class="cart-header">
+            <h3><i class="fa-solid fa-bag-shopping"></i> Your Cart (<span id="cartTotalItems">0</span>)</h3>
+            <button class="cart-close" onclick="toggleCart(event)" aria-label="Close cart"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <strong id="cartTotalPrice">₦0</strong>
+            </div>
+            <button class="checkout-btn" onclick="checkout()">Checkout <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </aside>
+
+    <!-- ===================== TOAST ===================== -->
+    <div class="toast" id="toast">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toastMsg">Item added!</span>
+    </div>
+
+    <!-- ===================== BACK TO TOP ===================== -->
+    <button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>

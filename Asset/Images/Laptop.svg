@@ -1,0 +1,23 @@
+<svg width="200" height="180" viewBox="0 0 200 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="lapGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f093fb"/>
+      <stop offset="100%" stop-color="#f5576c"/>
+    </linearGradient>
+  </defs>
+  <!-- Screen -->
+  <rect x="20" y="10" width="160" height="105" rx="8" fill="#1a1a2e"/>
+  <rect x="28" y="18" width="144" height="89" rx="4" fill="url(#lapGrad)"/>
+  <!-- Screen content - code lines -->
+  <rect x="38" y="30" width="60" height="6" rx="3" fill="#fff" opacity="0.8"/>
+  <rect x="38" y="45" width="90" height="6" rx="3" fill="#fff" opacity="0.6"/>
+  <rect x="38" y="60" width="75" height="6" rx="3" fill="#fff" opacity="0.7"/>
+  <rect x="38" y="75" width="100" height="6" rx="3" fill="#fff" opacity="0.5"/>
+  <rect x="38" y="90" width="55" height="6" rx="3" fill="#fff" opacity="0.6"/>
+  <!-- Camera -->
+  <circle cx="100" cy="14" r="2" fill="#4d4d6e"/>
+  <!-- Base -->
+  <path d="M10 125 L190 125 L175 145 L25 145 Z" fill="#2d2d4e"/>
+  <rect x="10" y="120" width="180" height="10" rx="5" fill="#3d3d5e"/>
+  <rect x="40" y="145" width="120" height="10" rx="4" fill="#4d4d6e"/>
+</svg>

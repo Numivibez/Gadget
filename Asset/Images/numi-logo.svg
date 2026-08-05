@@ -1,0 +1,11 @@
+<svg width="105" height="52" viewBox="0 0 105 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bd35bd"/>
+      <stop offset="100%" stop-color="#6a246a"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="48" height="48" rx="14" fill="url(#logoGrad)"/>
+  <text x="26" y="36" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">N</text>
+  <text x="60" y="34" font-family="Poppins, Arial, sans-serif" font-size="24" font-weight="700" fill="#bd35bd">Numi</text>
+</svg>
